@@ -25,7 +25,7 @@ trait LinkedList[A] {
     }
   }
 
-  def fold[B](end: B, f: (A, B) => B): B =
+  /*def fold[B](end: B, f: (A, B) => B): B =
     this match {
       case End => end
       case pair: Pair[A] => f(pair.head, pair.tail.fold(end, f))
@@ -34,7 +34,7 @@ trait LinkedList[A] {
   def sumFold = fold(0, (a:Int, b:Int) => a+b)
   def productFold = fold(1, (a:Int, b:Int) => a*b)
   def lengthFold = fold(0, (a:Int, b:Int) => 1 + b)
-  def doubleFold = fold(End, (a:Int, list: LinkedList[Int]) => Pair(a*2, list))
+  def doubleFold = fold(End, (a:Int, list: LinkedList[Int]) => Pair(a*2, list))*/
 
 }
 
